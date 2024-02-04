@@ -1,0 +1,6 @@
+Les pages du site qui ont été impacté par la semaine sont ;
+-	La page6.html (form)
+-	La page stylesJS3.css (mise en page des nouveaux éléments)
+-	Et la page 02app.js (code javascript du menu et du form)
+
+Les autres page ont toutes reçu le code pour le <script> et le menu burger

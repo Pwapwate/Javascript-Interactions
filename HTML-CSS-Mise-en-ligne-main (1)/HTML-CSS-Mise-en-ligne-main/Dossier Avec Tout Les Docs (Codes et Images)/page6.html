@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hôtel de Phares</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Manrope:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="menus.css" />
+    <link rel="stylesheet" href="styles-JS3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="image/Logo Simplifié.png" />
+  </head>
+  <body>
+    <header>
+      <div class="menu" role="navigation">
+        <div class="inner">
+          <div class="m-left">
+            <a href="index.html"><h1 class="logo">Hotel de phares</h1></a>
+          </div>
+          <div class="m-right">
+            <a href="index.html" class="m_link">Accueil</a>
+            <a href="page2.html" class="m_link">Concept</a>
+            <a href="page3.html" class="m_link">Les circuits</a>
+            <a href="page4.html" class="m_link">Les chambres</a>
+            <a href="page5.html" class="m_link">Les voitures</a>
+            <a href="page6.html" class="m_link">Reservez ici</a>
+            <a href="page7.html" class="m_link">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div id="menu-deroulant" class="open">
+        <div class="title-section">
+          <h2>Hôtel de phares</h2>
+          <span id="button" class="rotate">≡</span>
+        </div>
+
+        <div class="content-section">
+          <a href="index.html" class="link_burger">
+            <h2 id="burger">Accueil</h2> </a
+          ><a href="page2.html" class="link_burger">
+            <h2 id="burger">Concept</h2> </a
+          ><a href="page3.html" class="link_burger">
+            <h2 id="burger">Les circuits</h2> </a
+          ><a href="page4.html" class="link_burger">
+            <h2 id="burger">Les chambres</h2> </a
+          ><a href="page5.html" class="link_burger">
+            <h2 id="burger">Les voitures</h2>
+          </a>
+          <div class="content-section-2">
+            <a href="page6.html" class="link_burger">
+              <h2 id="burger_rond">Reservez ici</h2> </a
+            ><a href="page7.html" class="link_burger">
+              <h2 id="burger_rond">Contact</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main">
+        <div class="header">
+          <h2>Fichier de contact - Hôtel de phares</h2>
+          <div class="errors"></div>
+        </div>
+        <form action="" id="my-form">
+          <div class="boite">
+            <div class="div1">
+              <div>
+                <label for="firstName">Entrez un prénom</label><br />
+
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="Entrez un prénom"
+                />
+              </div>
+              <div>
+                <label for="lastName">Entrez un nom</label><br />
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Entrez un nom"
+                />
+              </div>
+              <div>
+                <label for="age">Entrez un âge</label><br />
+                <input
+                  type="text"
+                  name="age"
+                  id="age"
+                  placeholder="Entrez un âge"
+                />
+              </div>
+              <div>
+                <label for="country">Sélectionnez un pays</label><br />
+                <select name="country" id="country">
+                  <option value="null">Sélectionnez un pays</option>
+                  <option value="Algérie">Algérie</option>
+                  <option value="Allemagne">Allemagne</option>
+                  <option value="Belgique">Belgique</option>
+                  <option value="Bulgarie">Bulgarie</option>
+                  <option value="Cambodge">Cambodge</option>
+                  <option value="Chine">Chine</option>
+                  <option value="Colombie">Colombie</option>
+                  <option value="Comores">Comores</option>
+                  <option value="France">France</option>
+                  <option value="Maroc">Maroc</option>
+                  <option value="Portugal">Portugal</option>
+                  <option value="Sénégal">Sénégal</option>
+                  <option value="Tunisie">Tunisie</option>
+                  <option value="Vietnam">Vietnam</option>
+                </select>
+              </div>
+            </div>
+            <div class="div2">
+              <div>
+                <label for="email">Entrez un mail</label><br />
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Entrez un mail"
+                />
+              </div>
+              <div>
+                <label for="adresse">Entrez une adresse</label><br />
+                <input
+                  type="text"
+                  name="adresse"
+                  id="adresse"
+                  placeholder="Entrez une adresse"
+                />
+              </div>
+              <div>
+                <label for="ville">Entrez une ville</label><br />
+                <input
+                  type="text"
+                  name="ville"
+                  id="ville"
+                  placeholder="Entrez une ville"
+                />
+              </div>
+
+              <div>
+                <label for="codepostal">Entrez un Code Postal</label><br />
+                <input
+                  type="text"
+                  name="codepostal"
+                  id="codepostal"
+                  placeholder="Entrez un Code Postal"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mdp">
+            <div>
+              <label for="mdp">Entrez un mot de passe</label>
+              <input
+                type="text"
+                name="mdp"
+                id="mdp"
+                placeholder="Entrez un mot de passe"
+              />
+            </div>
+            <div>
+              <label for="v-mdp">Répétez votre mot de passe</label>
+              <input
+                type="text"
+                name="v-mdp"
+                id="v-mdp"
+                placeholder="Répétez le mot de passe"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="accepterConditions">
+              <input
+                type="checkbox"
+                id="accepterConditions"
+                name="accepterConditions"
+              />
+              J'accepte les conditions d'utilisation.
+            </label>
+            <div class="errorsCD"></div>
+          </div>
+          <div class="envoyer">
+            <input type="submit" value="S'inscrire" />
+          </div>
+        </form>
+        <div class="validation"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer" role="navigation">
+        <div class="inner_footer">
+          <div class="f-left">
+            <a href="index.html">
+              <img
+                class="footer_image"
+                src="image/Logo Simplifié.png"
+                alt="Logo Alt Text"
+              />
+            </a>
+          </div>
+          <div class="f-right">
+            <a href="index.html" class="f_link">Accueil</a>
+            <a href="page2.html" class="f_link">Concept</a>
+            <a href="page3.html" class="f_link">circuits</a>
+            <a href="page4.html" class="f_link">Chambres</a>
+            <a href="page5.html" class="f_link">Voitures</a>
+            <a href="page6.html" class="f_link">Reservation</a>
+            <a href="page7.html" class="f_link">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_phone" role="navigation">
+        <div class="inner_footer">
+          <div class="f-phone">
+            <a href="page6.html" class="f_phone">Haut de la page</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="02app.js"></script>
+  </body>
+</html>

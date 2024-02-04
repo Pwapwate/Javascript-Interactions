@@ -1,0 +1,124 @@
+/* menu FullScreen */
+.menu {
+  background-color: #971f20;
+  width: 100%;
+  height: 88px;
+  line-height: 88px;
+  border-bottom: 2px solid #6d836e;
+}
+
+.m-left {
+  float: left;
+}
+.logo {
+  margin: auto;
+  padding: auto;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.m-right {
+  float: right;
+}
+.m_link {
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 0;
+  margin: 0 10px;
+  transition: all 0.15s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+.m_link:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #000000;
+  color: #000000;
+}
+
+/* Footer Full screen*/
+.footer {
+  margin-top: 3%;
+  background-color: #971f20;
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+}
+
+.f-left {
+  float: left;
+}
+.footer_image {
+  height: 60px;
+  padding: 5%;
+  margin-left: 100%;
+}
+.f-right {
+  float: right;
+}
+.f_link {
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 0;
+  margin: 0 10px;
+  transition: all 0.15s ease-in-out;
+}
+.f_link:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #000000;
+  color: #000000;
+}
+/* Footer Phone screen*/
+.footer_phone {
+  margin-top: 3%;
+  background-color: #971f20;
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+  display: none;
+}
+.f_phone {
+  text-decoration: none;
+  color: rgb(219, 219, 219);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 0;
+  text-align: center;
+  margin-left: 35%;
+
+  transition: all 0.15s ease-in-out;
+}
+.f_phone:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #000000;
+  color: #000000;
+}
+
+/* Responsive */
+/* Responsive */
+
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    display: none;
+  }
+  .footer_phone {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    display: none;
+  }
+  .footer_phone {
+    display: block;
+  }
+}

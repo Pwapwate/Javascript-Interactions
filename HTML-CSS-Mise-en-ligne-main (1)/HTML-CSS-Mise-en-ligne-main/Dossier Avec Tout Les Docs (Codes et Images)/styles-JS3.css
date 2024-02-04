@@ -1,0 +1,229 @@
+/*css pour le form*/ /**/
+/*Mise en forme de la div qui contient toute la page*/
+.main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 15%;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 11px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+/*Titre au dessus du form*/
+.header {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 0;
+}
+h2 {
+  margin: none;
+  padding: none;
+}
+/*Div du submit*/
+.envoyer {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  padding: 10px 10px 0 10px;
+}
+/*Div des mdps et verif*/
+.mdp {
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+  margin: 1%;
+}
+/*Contient le form*/
+.boite {
+  display: flex;
+}
+/*Pour que les div se mettent a coté*/
+.div1,
+.div2 {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin: 1%;
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+/* placehholder et la case des pays*/
+input[type="text"],
+select {
+  width: 100%;
+  padding: 9px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid rgb(166, 166, 166);
+}
+
+/* cases à cocher */
+input[type="checkbox"] {
+  margin-right: 5px;
+  border: 1px solid rgb(166, 166, 166);
+}
+
+/* mise en page pour le sumbit */
+input[type="submit"] {
+  background-color: #aaaaaa;
+  border: none;
+  color: #fff;
+  padding: 10px 30%;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+/* hover du submit */
+input[type="submit"]:hover {
+  background-color: #a81a1a;
+}
+
+#accepterConditions {
+  margin: 1%;
+}
+/* css pour le menu burger*/
+/*Mise en page du container du menu*/
+#menu-deroulant {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: none;
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: lighter;
+  color: #ffffff;
+  background-color: #971f20;
+}
+h2 {
+  margin: 0.5rem 0;
+}
+/* mise en page du titre */
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  -webkit-box-shadow: 0px 11px 21px -8px rgba(255, 255, 255, 0.68);
+  box-shadow: 0px 11px 21px -8px rgba(255, 255, 255, 0.68);
+}
+
+/* mise en page du contenu du titre */
+.title-section span {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+/* mise en pagez de la div des liens */
+.content-section {
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  transition: 1s;
+  padding: 0px 20px;
+  border-bottom: 2px solid;
+  background-color: #971f20;
+}
+
+/* mise en page du contenu quand il est open grace au js */
+#menu-deroulant.open .content-section {
+  height: auto;
+  visibility: visible; /* on le rend visible */
+  padding: 30px 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* bouton dans les span*/
+#button {
+  transition: transform 1s ease-in-out; /*transition bouton */
+}
+
+/*rotation button */
+#button.rotate {
+  transform: rotate(180deg); /* rotation boutton  */
+}
+
+/* mise en page des liens */
+.link_burger {
+  text-decoration: none; /* pas de border bottom */
+  color: rgb(219, 219, 219);
+  text-align: center;
+  margin-left: 1px;
+  transition: all 0.15s ease-in-out;
+  font-weight: 100;
+}
+
+/* hover des liens */
+.link_burger:hover {
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: none;
+}
+
+/* mise en page des deux liens avec un border */
+#burger_rond {
+  text-align: center;
+  margin-left: 39%;
+  border-radius: 100px;
+  background-color: rgb(255, 255, 255);
+  width: 20%;
+  font-weight: 900;
+  color: #000000;
+  padding: 1%;
+  transition: all 0.15s ease-in-out;
+}
+
+/* hover de ces liens */
+#burger_rond:hover {
+  background-color: #737373;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+  .menu {
+    display: none;
+  }
+  #menu-deroulant {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .menu {
+    display: none;
+  }
+  #menu-deroulant {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  #menu-deroulant {
+    display: block;
+  }
+  #burger_rond {
+    font-size: 15px;
+  }
+  #burger {
+    font-size: 15px;
+  }
+  .link_burger {
+    margin-left: 0.1;
+  }
+}
